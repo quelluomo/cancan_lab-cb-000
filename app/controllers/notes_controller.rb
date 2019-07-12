@@ -17,7 +17,17 @@ class NotesController < ApplicationController
     redirect_to '/'
   end
 
-  def destroy
+  def edit
+  end
+
+  def show
+  end
+
+  def index
+    @notes = Note.none
+    if current_user
+      @notes = current_user.readable
+    end
   end
 
   private
