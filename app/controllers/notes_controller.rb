@@ -1,9 +1,6 @@
 class NotesController < ApplicationController
   load_and_authorize_resource only: [:edit, :show, :update]
 
-  def index
-  end
-
   def new
     render partial: 'form', locals: {note: Note.new}
   end
