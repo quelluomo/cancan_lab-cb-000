@@ -17,7 +17,8 @@ class NotesController < ApplicationController
     redirect_to '/'
   end
 
-  def destroy
+  def show
+
   end
 
   private
