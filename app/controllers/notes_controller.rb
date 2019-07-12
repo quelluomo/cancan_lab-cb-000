@@ -17,10 +17,10 @@ class NotesController < ApplicationController
     redirect_to '/'
   end
 
-  def show
+  def edit
   end
 
-  def edit
+  def show
   end
 
   private
